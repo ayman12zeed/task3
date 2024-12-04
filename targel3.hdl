@@ -1,0 +1,12 @@
+/*
+ארואד רחאל 213481963
+*/
+CHIP T3F1{
+IN in1,in2,in3;
+OUT out;
+PARTS:
+Not (in =in1, out=notin1);
+Not (in =in3, out=notin3);
+And (a=notin1, b=in2, out=x);
+And (a=notin3, b=x, out=out);
+}
